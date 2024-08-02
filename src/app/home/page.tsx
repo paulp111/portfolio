@@ -2,6 +2,7 @@ import Head from "next/head";
 import "../../assets/styles/globals.css"; // Der richtige Pfad zu globals.css
 import { HeroHighlightSection } from "@/components/HeroHighlightSection";
 import CustomScroll from "@/components/CustomScroll"; // Der richtige Pfad zu CustomScroll
+import { FlipWordsSection } from "@/components/FlipWordsSection"; // Hinzugefügt
 
 export default function MainPage() {
   return (
@@ -15,6 +16,7 @@ export default function MainPage() {
       <main className="bg-white dark:bg-black">
         <HeroHighlightSection />
         <CustomScroll />
+        <FlipWordsSection /> {/* Neue Section hinzugefügt */}
         <div className="min-h-screen flex items-center justify-center">
           <p className="text-3xl">Hier ist zusätzlicher Inhalt</p>
         </div>
