@@ -1,6 +1,7 @@
 import Head from "next/head";
 import "../../assets/styles/globals.css"; // Der richtige Pfad zu globals.css
 import { HeroHighlightSection } from "@/components/HeroHighlightSection";
+import CustomScroll from "@/components/CustomScroll"; // Der richtige Pfad zu CustomScroll
 
 export default function MainPage() {
   return (
@@ -11,8 +12,15 @@ export default function MainPage() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <main className="flex flex-col items-center justify-center min-h-screen bg-gray-900">
+      <main className="bg-white dark:bg-black">
         <HeroHighlightSection />
+        <CustomScroll />
+        <div className="min-h-screen flex items-center justify-center">
+          <p className="text-3xl">Hier ist zusätzlicher Inhalt</p>
+        </div>
+        <div className="min-h-screen flex items-center justify-center">
+          <p className="text-3xl">Noch mehr Inhalt, um das Scrollen zu testen</p>
+        </div>
       </main>
     </div>
   );

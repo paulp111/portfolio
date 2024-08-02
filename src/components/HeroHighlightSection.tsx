@@ -29,3 +29,5 @@ export function HeroHighlightSection() {
     </HeroHighlight>
   );
 }
+
+export { Highlight }; // Sicherstellen, dass Highlight exportiert wird
