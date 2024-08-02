@@ -20,9 +20,12 @@ export default function CustomScroll() {
           top: 0,
           behavior: "smooth",
         });
-      } 
+      }
       // Scrollen nach unten
-      else if (currentScroll > lastScrollTop.current && currentScroll < threshold) {
+      else if (
+        currentScroll > lastScrollTop.current &&
+        currentScroll < threshold
+      ) {
         isScrolling.current = true;
         window.scrollTo({
           top: threshold,
@@ -47,4 +50,4 @@ export default function CustomScroll() {
   return null;
 }
 
-// FIX SUPER WEIRD DOUBLE SCROLL BUG 
+// FIX SUPER WEIRD DOUBLE SCROLL BUG

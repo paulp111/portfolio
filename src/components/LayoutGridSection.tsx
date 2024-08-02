@@ -1,7 +1,6 @@
 import React from "react";
 import { LayoutGrid } from "@/components/ui/layout-grid";
 
-
 export function LayoutGridSection() {
   const cards = [
     {

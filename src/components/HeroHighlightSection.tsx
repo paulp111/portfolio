@@ -1,6 +1,9 @@
 "use client";
 import { motion } from "framer-motion";
-import { HeroHighlight, Highlight } from "@/components/ui/hero-highlight-section";
+import {
+  HeroHighlight,
+  Highlight,
+} from "@/components/ui/hero-highlight-section";
 
 export function HeroHighlightSection() {
   return (
@@ -30,4 +33,4 @@ export function HeroHighlightSection() {
   );
 }
 
-export { Highlight }; // Sicherstellen, dass Highlight exportiert wird
+export { Highlight };

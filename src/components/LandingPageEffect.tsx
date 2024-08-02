@@ -4,11 +4,11 @@ import { CanvasRevealEffect } from "@/components/ui/canvas-reveal-effect";
 import { AnimatePresence } from "framer-motion";
 import { useRouter } from "next/navigation";
 
-export function LandingPageEffect() { // Neuer Name der Funktion
+export function LandingPageEffect() {
   const router = useRouter();
 
   const handleClick = () => {
-    router.push('/home'); // Weiterleitung zur Home-Seite
+    router.push("/home");
   };
 
   return (
