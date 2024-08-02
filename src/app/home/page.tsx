@@ -4,6 +4,9 @@ import { HeroHighlightSection } from "@/components/HeroHighlightSection";
 import { FlipWordsSection } from "@/components/FlipWordsSection";
 import { LayoutGridSection } from "@/components/LayoutGridSection";
 import CustomScroll from "@/components/CustomScroll";
+import { RevealBoxSection } from "@/components/RevealBoxSection";
+import { TextGenerateEffectSection } from "@/components/TextGenerateEffectSection";
+import { StaticHighlight } from "@/components/ui/static-highlight";
 
 export default function MainPage() {
   return (
@@ -17,10 +20,18 @@ export default function MainPage() {
       <main className="bg-white dark:bg-black">
         <HeroHighlightSection />
         <CustomScroll />
-        <div className="flex justify-center items-center">
+        <div className="flex flex-col items-center justify-center min-h-screen pt-20">
+          <StaticHighlight className="text-4xl mb-6">About me</StaticHighlight>
           <LayoutGridSection />
         </div>
-        <div className="flex items-center justify-center">
+        <div className="flex items-center justify-center min-h-screen pt-10">
+          <TextGenerateEffectSection />
+        </div>
+        <div className="flex flex-col items-center justify-center min-h-screen pt-10">
+          <StaticHighlight className="text-4xl mb-6">My work</StaticHighlight>
+          <RevealBoxSection />
+        </div>
+        <div className="flex items-center justify-center min-h-screen pt-10">
           <FlipWordsSection />
         </div>
       </main>
