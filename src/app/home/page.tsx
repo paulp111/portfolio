@@ -8,6 +8,7 @@ import { CardHoverEffectSection } from "@/components/CardHoverEffectSection";
 import { TextGenerateEffectSection } from "@/components/TextGenerateEffectSection";
 import { StaticHighlight } from "@/components/ui/static-highlight";
 import { Navbar } from "@/components/Navbar";
+import { Footer } from "@/components/Footer";
 
 export default function MainPage() {
   return (
@@ -40,6 +41,8 @@ export default function MainPage() {
           <FlipWordsSection />
         </div>
       </main>
+
+      <Footer /> {/* Hier wird der Footer eingebunden */}
     </div>
   );
 }
