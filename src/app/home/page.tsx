@@ -7,6 +7,7 @@ import CustomScroll from "@/components/CustomScroll";
 import { CardHoverEffectSection } from "@/components/CardHoverEffectSection";
 import { TextGenerateEffectSection } from "@/components/TextGenerateEffectSection";
 import { StaticHighlight } from "@/components/ui/static-highlight";
+import { Navbar } from "@/components/Navbar";
 
 export default function MainPage() {
   return (
@@ -18,6 +19,7 @@ export default function MainPage() {
       </Head>
 
       <main className="bg-white dark:bg-black">
+        <Navbar /> {/* Hier wird die Navbar eingefügt */}
         <HeroHighlightSection />
         <CustomScroll />
         <div className="flex flex-col items-center justify-center min-h-screen pt-20">
