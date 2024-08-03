@@ -11,7 +11,7 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <main className="flex flex-col items-center justify-center min-h-screen bg-gray-900">
+      <main className="flex flex-col items-center justify-center min-h-screen bg-[#f7fafc]">
         <LandingPageEffect />
       </main>
     </div>

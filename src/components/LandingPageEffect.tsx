@@ -28,15 +28,15 @@ export function LandingPageEffect() {
       </AnimatePresence>
       <div className="relative z-20 flex items-center justify-center h-full flex-col">
         <h2 className="text-white text-3xl font-bold mb-8">
-          With insomnia, nothing&apos;s real. Everything is far away.
+        Hoist the code and set sail on the digital seas!  
         </h2>
         <h2 className="text-white text-3xl font-bold mb-8">
-          Everything is a copy, of a copy, of a copy
+        CodeBay: where innovation and creativity anchor
         </h2>
         <button className="p-[3px] relative" onClick={handleClick}>
           <div className="absolute inset-0 bg-gradient-to-r from-indigo-500 to-purple-500 rounded-lg" />
           <div className="px-8 py-2 bg-black rounded-[6px] relative group transition duration-200 text-white hover:bg-transparent">
-            Lit up borders
+          Set Course
           </div>
         </button>
       </div>
