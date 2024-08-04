@@ -29,7 +29,7 @@ export default function MainPage() {
         <div className="flex flex-col items-center justify-center min-h-screen pt-20">
           <StaticHighlight className="text-4xl mb-6">Digital Dreams</StaticHighlight>
           <p className="text-lg text-gray-600 dark:text-gray-300 mb-4">
-            Tip: Click on a picture to reveal more details! 🔥
+            Tip: Click on a picture to reveal more details! delete🔥
           </p>
           <LayoutGridSection />
         </div>

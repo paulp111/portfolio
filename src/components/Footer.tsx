@@ -51,7 +51,7 @@ export function Footer() {
         </div>
       </div>
       <div className="mt-10 text-center">
-        <p className="text-sm text-gray-400">&copy; {new Date().getFullYear()} My Portfolio. All rights reserved.</p>
+        <p className="text-sm text-gray-400">&copy; {new Date().getFullYear()} seashellscripts.com. All rights reserved.</p>
       </div>
     </footer>
   );

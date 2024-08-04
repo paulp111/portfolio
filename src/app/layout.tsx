@@ -5,7 +5,7 @@ import "../assets/styles/globals.css"; // Verwenden Sie den relativen Pfad
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "My Portfolio",
+  title: "SeaShellScripts",
   description: "My portfolio website",
 };
 

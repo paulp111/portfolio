@@ -6,7 +6,7 @@ export function InfoCard() {
   return (
     <CardSpotlight className="h-96 w-96">
       <p className="text-xl font-bold relative z-20 mt-2 text-white">
-        Why Codebay?
+        Why SeaShellScripts?
       </p>
       <div className="text-neutral-200 mt-4 relative z-20">
         <p>Here's what sets me apart:</p>

@@ -31,7 +31,7 @@ export function LandingPageEffect() {
         Hoist the code and set sail on the digital seas!  
         </h2>
         <h2 className="text-white text-3xl font-bold mb-8">
-        CodeBay: where innovation and creativity anchor
+        SeaShellScripts: where innovation and creativity anchor
         </h2>
         <button className="p-[3px] relative" onClick={handleClick}>
           <div className="absolute inset-0 bg-gradient-to-r from-indigo-500 to-purple-500 rounded-lg" />
