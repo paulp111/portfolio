@@ -35,7 +35,9 @@ export default function MainPage() {
         </div>
         <div className="flex items-center justify-center min-h-screen pt-10">
           <TextGenerateEffectSection />
-          <InfoCard className="ml-8" /> {/* Hier wird die InfoCard eingefügt */}
+          <div className="ml-8">
+            <InfoCard /> {/* Hier wird die InfoCard eingefügt */}
+          </div>
         </div>
         <div className="flex flex-col items-center justify-center min-h-screen pt-10">
           <StaticHighlight className="text-4xl mb-6">Code & Canvas</StaticHighlight>
