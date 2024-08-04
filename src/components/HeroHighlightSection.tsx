@@ -10,7 +10,7 @@ export function HeroHighlightSection() {
     <HeroHighlight>
       <div className="relative flex flex-col items-center">
         {/* Größeres Logo */}
-        <Image src="/the-pirate-bay.svg" alt="Logo" width={150} height={150} className="mb-6" />
+        <Image src="/logo.svg" alt="Logo" width={150} height={150} className="mb-6" />
 
         {/* Text Section */}
         <motion.h1
