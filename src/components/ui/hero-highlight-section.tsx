@@ -32,7 +32,7 @@ export const HeroHighlight = ({
   return (
     <div
       className={cn(
-        "relative min-h-screen w-full bg-[#f7fafc] dark:bg-black flex items-center justify-center group",
+        "relative min-h-screen w-full bg-[#eaecff] dark:bg-black flex items-center justify-center group",
         containerClassName
       )}
       onMouseMove={handleMouseMove}

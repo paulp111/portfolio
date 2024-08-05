@@ -11,4 +11,11 @@ body {
   html {
     scroll-behavior: smooth;
   }
+  /*
+  .bg-grid-pattern {
+  background-image: linear-gradient(to right, #ccc 1px, transparent 1px),
+                    linear-gradient(to bottom, #ccc 1px, transparent 1px);
+  background-size: 40px 40px;
+}
+*/
   
