@@ -10,7 +10,7 @@ export function HeroHighlightSection() {
     <HeroHighlight>
       <div className="relative flex flex-col items-center">
         { /*Größeres Logo */}
-        { <Image src="/The_Pirate_Bay_logo_bw.svg" alt="Logo" width={150} height={150} className="mb-6" /> }
+        { <Image src="/seashell.png" alt="Logo" width={200} height={200} className="mb-6" /> }
 
         {/* Text Section */}
         <motion.h1
@@ -28,9 +28,9 @@ export function HeroHighlightSection() {
           }}
           className="text-2xl px-4 md:text-4xl lg:text-5xl font-bold text-neutral-700 dark:text-white max-w-4xl leading-relaxed lg:leading-snug text-center mx-auto "
         >
-          Technology is the canvas,{" "}
+          Technology is the canvas{" "}
           <Highlight className="text-black dark:text-white">
-            imagination is the brush.
+            Imagination is the brush
           </Highlight>
         </motion.h1>
       </div>

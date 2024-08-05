@@ -7,7 +7,7 @@ export default function Home() {
     <div>
       <Head>
         <title>My Portfolio</title>
-        <meta name="description" content="My portfolio website" />
+        <meta name="description" content="Welcome to the bay" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
