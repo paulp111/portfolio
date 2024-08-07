@@ -13,6 +13,7 @@ import ScrollToTopButton from "@/components/ScrollToTopButton";
 import { DirectionAwareHoverDemo } from "@/components/DirectionAwareHoverCard"; 
 import ScrollDownButton from "@/components/ScrollDownButton"; 
 import { ElonCard } from "@/components/ElonCard"; 
+import { Introduction } from "@/components/Introduction"; // Import the new LinkPreviewDemo component
 
 export default function MainPage() {
   return (
@@ -28,6 +29,7 @@ export default function MainPage() {
         <HeroHighlightSection />
         <ScrollDownButton /> {/* Add the ScrollDownButton here */}
         <CustomScroll />
+
         {/* Wellen-Übergang oberhalb des LayoutGridSection */}
         <div
           style={{
@@ -39,6 +41,11 @@ export default function MainPage() {
           }}
         ></div>
 
+        {/* Introduction */}
+        <div className="flex flex-col items-center justify-center min-h-screen pt-20">
+          <Introduction/>
+        </div>
+
         <div className="flex flex-col items-center justify-center min-h-screen pt-20">
           <StaticHighlight className="text-4xl mb-6">Digital Dreams</StaticHighlight>
           <p className="text-lg text-gray-600 dark:text-gray-300 mb-4">
@@ -47,7 +54,7 @@ export default function MainPage() {
           <LayoutGridSection />
         </div>
 
-          {/* Elon quote & Funny Elon card */}
+        {/* Elon quote & Funny Elon card */}
         <div className="flex items-center justify-center min-h-screen pt-10">
           <TextGenerateEffectSection />
           <div className="ml-8">
@@ -63,7 +70,6 @@ export default function MainPage() {
         <div className="flex items-center justify-center min-h-screen pt-10">
           <FlipWordsSection />
         </div>
-
 
         {/* Adding the Direction-Aware-Hover cards */}
         <div className="flex flex-col items-center justify-center min-h-screen pt-10">
