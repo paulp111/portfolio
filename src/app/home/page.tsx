@@ -9,11 +9,10 @@ import { TextGenerateEffectSection } from "@/components/TextGenerateEffectSectio
 import { StaticHighlight } from "@/components/ui/static-highlight";
 import { Navbar } from "@/components/Navbar";
 import { Footer } from "@/components/Footer";
-import { InfoCard } from "@/components/InfoCard"; 
 import ScrollToTopButton from "@/components/ScrollToTopButton";
 import { DirectionAwareHoverDemo } from "@/components/DirectionAwareHoverCard"; 
 import ScrollDownButton from "@/components/ScrollDownButton"; 
-import { CardDemo } from "@/components/CardDemo"; 
+import { ElonCard } from "@/components/ElonCard"; 
 
 export default function MainPage() {
   return (
@@ -48,10 +47,11 @@ export default function MainPage() {
           <LayoutGridSection />
         </div>
 
+          {/* Elon quote & Funny Elon card */}
         <div className="flex items-center justify-center min-h-screen pt-10">
           <TextGenerateEffectSection />
           <div className="ml-8">
-            <InfoCard />
+            <ElonCard /> {/* Funny Elon card */}
           </div>
         </div>
 
@@ -64,15 +64,6 @@ export default function MainPage() {
           <FlipWordsSection />
         </div>
 
-        {/* Adding the new CardDemo cards */}
-        <div className="flex flex-col items-center justify-center min-h-screen pt-10">
-          <StaticHighlight className="text-4xl mb-6">Special Cards</StaticHighlight>
-          <div className="flex space-x-4">
-            <CardDemo />
-            <CardDemo />
-            <CardDemo />
-          </div>
-        </div>
 
         {/* Adding the Direction-Aware-Hover cards */}
         <div className="flex flex-col items-center justify-center min-h-screen pt-10">

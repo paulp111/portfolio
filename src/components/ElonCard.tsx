@@ -1,9 +1,9 @@
 "use client";
 import { cn } from "@/lib/utils";
 
-export function CardDemo() {
-  const backgroundImage = "/images/blk.png"; 
-  const hoverGif = "/images/elon1.gif"; 
+export function ElonCard() {
+  const backgroundImage = "/images/blk.png";
+  const hoverGif = "/images/elon1.gif";
 
   return (
     <div className="max-w-xs w-full">
@@ -11,7 +11,7 @@ export function CardDemo() {
         className={cn(
           "group w-full cursor-pointer overflow-hidden relative card h-96 rounded-md shadow-xl mx-auto flex flex-col justify-end p-4 border border-transparent dark:border-neutral-800",
           "bg-cover",
-          "bg-[url('/images/blk.png')]", 
+          "bg-[url('/images/blk.png')]",
           "before:bg-[url('/images/elon1.gif')] before:fixed before:inset-0 before:opacity-0 before:z-[-1]",
           "hover:bg-[url('/images/elon1.gif')]",
           "hover:after:content-[''] hover:after:absolute hover:after:inset-0 hover:after:bg-black hover:after:opacity-50",
@@ -32,10 +32,10 @@ export function CardDemo() {
             </ul>
           </div>
           <p className="text-neutral-300 mt-4 relative z-50 text-sm">
-            Explore my work and discover what makes me a trusted partner for
-            your digital needs. Consistent and dependable, I deliver what I
-            promise. Driven by a love for technology and design, I go above and
-            beyond. hover the box
+            "When something is important enough, you do it even if the odds are
+            not in your favor. Failure is an option here. If things are not
+            failing, you are not innovating enough."{" "}
+            <span className="font-bold">-Elon Musk</span>
           </p>
         </div>
       </div>
