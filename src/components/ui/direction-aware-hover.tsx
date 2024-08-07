@@ -1,36 +1,34 @@
 "use client";
- 
+
 import { useRef, useState } from "react";
-import Image from "next/image";
 import { AnimatePresence, motion } from "framer-motion";
 import { cn } from "@/lib/utils";
- 
+
 export const DirectionAwareHover = ({
-  imageUrl,
+  videoUrl,
   children,
   childrenClassName,
-  imageClassName,
+  videoClassName,
   className,
 }: {
-  imageUrl: string;
+  videoUrl: string;
   children: React.ReactNode | string;
   childrenClassName?: string;
-  imageClassName?: string;
+  videoClassName?: string;
   className?: string;
 }) => {
   const ref = useRef<HTMLDivElement>(null);
- 
+
   const [direction, setDirection] = useState<
     "top" | "bottom" | "left" | "right" | string
   >("left");
- 
+
   const handleMouseEnter = (
     event: React.MouseEvent<HTMLDivElement, MouseEvent>
   ) => {
     if (!ref.current) return;
- 
+
     const direction = getDirection(event, ref.current);
-    console.log("direction", direction);
     switch (direction) {
       case 0:
         setDirection("top");
@@ -49,7 +47,7 @@ export const DirectionAwareHover = ({
         break;
     }
   };
- 
+
   const getDirection = (
     ev: React.MouseEvent<HTMLDivElement, MouseEvent>,
     obj: HTMLElement
@@ -60,7 +58,7 @@ export const DirectionAwareHover = ({
     const d = Math.round(Math.atan2(y, x) / 1.57079633 + 5) % 4;
     return d;
   };
- 
+
   return (
     <motion.div
       onMouseEnter={handleMouseEnter}
@@ -86,15 +84,15 @@ export const DirectionAwareHover = ({
               ease: "easeOut",
             }}
           >
-            <Image
-              alt="image"
+            <video
               className={cn(
-                "h-full w-full object-cover scale-[1.15]",
-                imageClassName
+                "h-full w-full object-cover scale-[1.05] transition-transform duration-500",
+                videoClassName
               )}
-              width="1000"
-              height="1000"
-              src={imageUrl}
+              autoPlay
+              loop
+              muted
+              src={videoUrl}
             />
           </motion.div>
           <motion.div
@@ -115,30 +113,30 @@ export const DirectionAwareHover = ({
     </motion.div>
   );
 };
- 
+
 const variants = {
   initial: {
     x: 0,
   },
- 
+
   exit: {
     x: 0,
     y: 0,
   },
   top: {
-    y: 20,
+    y: 10,
   },
   bottom: {
-    y: -20,
+    y: -10,
   },
   left: {
-    x: 20,
+    x: 10,
   },
   right: {
-    x: -20,
+    x: -10,
   },
 };
- 
+
 const textVariants = {
   initial: {
     y: 0,
@@ -151,7 +149,7 @@ const textVariants = {
     opacity: 0,
   },
   top: {
-    y: -20,
+    y: -10,
     opacity: 1,
   },
   bottom: {
@@ -163,7 +161,7 @@ const textVariants = {
     opacity: 1,
   },
   right: {
-    x: 20,
+    x: 10,
     opacity: 1,
   },
 };
