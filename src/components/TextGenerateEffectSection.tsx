@@ -2,7 +2,7 @@
 import React, { useEffect } from "react";
 import { TextGenerateEffect } from "@/components/ui/text-generate-effect";
 
-const words = `“Everyone can rise above their circumstances and achieve success if they are dedicated to and passionate about what they do.” – Nelson Mandela ☀️`;
+const words = `"When something is important enough, you do it even if the odds are not in your favor. Failure is an option here. If things are not failing, you are not innovating enough." -Elon Musk`;
 
 export function TextGenerateEffectSection() {
   return (

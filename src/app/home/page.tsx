@@ -11,9 +11,9 @@ import { Navbar } from "@/components/Navbar";
 import { Footer } from "@/components/Footer";
 import { InfoCard } from "@/components/InfoCard"; 
 import ScrollToTopButton from "@/components/ScrollToTopButton";
-import { DirectionAwareHoverDemo } from "@/components/DirectionAwareHoverCard"; // Importiere die Demo-Komponente
-import ScrollDownButton from "@/components/ScrollDownButton"; // Import the new ScrollDownButton component
-
+import { DirectionAwareHoverDemo } from "@/components/DirectionAwareHoverCard"; 
+import ScrollDownButton from "@/components/ScrollDownButton"; 
+import { CardDemo } from "@/components/CardDemo"; 
 
 export default function MainPage() {
   return (
@@ -43,7 +43,7 @@ export default function MainPage() {
         <div className="flex flex-col items-center justify-center min-h-screen pt-20">
           <StaticHighlight className="text-4xl mb-6">Digital Dreams</StaticHighlight>
           <p className="text-lg text-gray-600 dark:text-gray-300 mb-4">
-            Tip: Click on a picture to reveal more details! delete🔥
+            Every idea starts with a spark
           </p>
           <LayoutGridSection />
         </div>
@@ -64,11 +64,24 @@ export default function MainPage() {
           <FlipWordsSection />
         </div>
 
-        {/* Hinzufügen der Direction-Aware-Hover-Karten */}
-        <div className="flex items-center justify-center py-10 bg-gray-100">
-          <DirectionAwareHoverDemo />
-          <DirectionAwareHoverDemo />
-          <DirectionAwareHoverDemo />
+        {/* Adding the new CardDemo cards */}
+        <div className="flex flex-col items-center justify-center min-h-screen pt-10">
+          <StaticHighlight className="text-4xl mb-6">Special Cards</StaticHighlight>
+          <div className="flex space-x-4">
+            <CardDemo />
+            <CardDemo />
+            <CardDemo />
+          </div>
+        </div>
+
+        {/* Adding the Direction-Aware-Hover cards */}
+        <div className="flex flex-col items-center justify-center min-h-screen pt-10">
+          <StaticHighlight className="text-4xl mb-6">Explore More</StaticHighlight>
+          <div className="flex space-x-4">
+            <DirectionAwareHoverDemo />
+            <DirectionAwareHoverDemo />
+            <DirectionAwareHoverDemo />
+          </div>
         </div>
       </main>
 
