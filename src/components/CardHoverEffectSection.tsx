@@ -10,39 +10,39 @@ export function CardHoverEffectSection() {
 
 export const projects = [
   {
-    title: "Stripe",
+    title: "React",
     description:
-      "A technology company that builds economic infrastructure for the internet.",
+      "Next.js, Vite & Three.js, because they make building web apps efficient, enjoyable, and visually impressive with 3D graphics.",
     link: "/subpage",
   },
   {
-    title: "Netflix",
+    title: "JavaScript & TypeScript",
     description:
-      "A streaming service that offers a wide variety of award-winning TV shows, movies, anime, documentaries, and more on thousands of internet-connected devices.",
+      "JS & TS, the backbone of modern web development, making my code dynamic, robust, and maintainable.",
     link: "/subpage",
   },
   {
-    title: "Google",
+    title: "Python",
     description:
-      "A multinational technology company that specializes in Internet-related services and products.",
+      "Python, for its simplicity and power in scripting, data analysis, and backend development.",
     link: "/subpage",
   },
   {
-    title: "Meta",
+    title: "Kotlin",
     description:
-      "A technology company that focuses on building products that advance Facebook's mission of bringing the world closer together.",
+      "Kotlin, for modern, expressive Android and cross-platform app development.",
     link: "/subpage",
   },
   {
-    title: "Amazon",
+    title: "Java, PHP & C#",
     description:
-      "A multinational technology company focusing on e-commerce, cloud computing, digital streaming, and artificial intelligence.",
+      "Java, PHP & C#, for versatile server-side development, Windows app creation, and game development with Unity.",
     link: "/subpage",
   },
   {
-    title: "Microsoft",
+    title: "Design",
     description:
-      "A multinational technology company that develops, manufactures, licenses, supports, and sells computer software, consumer electronics, personal computers, and related services.",
+      "Photoshop, AfterEffects, Figma... all of them. Because it's my passion. Dot.",
     link: "/subpage",
   },
 ];

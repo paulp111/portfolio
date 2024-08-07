@@ -49,5 +49,3 @@ export default function CustomScroll() {
 
   return null;
 }
-
-// FIX SUPER WEIRD DOUBLE SCROLL BUG

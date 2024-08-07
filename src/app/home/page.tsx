@@ -11,6 +11,9 @@ import { Navbar } from "@/components/Navbar";
 import { Footer } from "@/components/Footer";
 import { InfoCard } from "@/components/InfoCard"; 
 import ScrollToTopButton from "@/components/ScrollToTopButton";
+import { DirectionAwareHoverDemo } from "@/components/DirectionAwareHoverCard"; // Importiere die Demo-Komponente
+import ScrollDownButton from "@/components/ScrollDownButton"; // Import the new ScrollDownButton component
+
 
 export default function MainPage() {
   return (
@@ -18,14 +21,14 @@ export default function MainPage() {
       <Head>
         <title>Main Page</title>
         <meta name="description" content="Description of the main page" />
-        <link rel="icon" href="/favicon.ico" />
+        <link rel="icon" href="/sctipts.png" />
       </Head>
 
       <main className="bg-[#f7fafc] dark:bg-black">
         <Navbar />
         <HeroHighlightSection />
+        <ScrollDownButton /> {/* Add the ScrollDownButton here */}
         <CustomScroll />
-
         {/* Wellen-Übergang oberhalb des LayoutGridSection */}
         <div
           style={{
@@ -53,12 +56,19 @@ export default function MainPage() {
         </div>
 
         <div className="flex flex-col items-center justify-center min-h-screen pt-10">
-          <StaticHighlight className="text-4xl mb-6">Code & Canvas</StaticHighlight>
+          <StaticHighlight className="text-4xl mb-6">Skills & Passion</StaticHighlight>
           <CardHoverEffectSection />
         </div>
 
         <div className="flex items-center justify-center min-h-screen pt-10">
           <FlipWordsSection />
+        </div>
+
+        {/* Hinzufügen der Direction-Aware-Hover-Karten */}
+        <div className="flex items-center justify-center py-10 bg-gray-100">
+          <DirectionAwareHoverDemo />
+          <DirectionAwareHoverDemo />
+          <DirectionAwareHoverDemo />
         </div>
       </main>
 

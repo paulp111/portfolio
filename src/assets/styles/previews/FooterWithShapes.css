@@ -1,0 +1,34 @@
+/*  PUT IN OTHER FOLDER LATER !!!!!!!!!!!!
+UWU*/
+/* styles/FooterWithShapes.css */
+.footer {
+    position: relative;
+    height: 100vh; /* Ensure footer takes full viewport height */
+    overflow: hidden;
+  }
+  
+  .shape {
+    position: absolute;
+    width: auto;
+    height: auto;
+  }
+  
+  .shape:nth-child(1) {
+    left: 10%;
+    bottom: 50%; /* Move higher up */
+    height: 200px; /* Adjust size as needed */
+  }
+  
+  .shape:nth-child(2) {
+    left: 50%;
+    bottom: 60%; /* Move higher up */
+    height: 400px; /* Adjust size as needed */
+    transform: translateX(-50%);
+  }
+  
+  .shape:nth-child(3) {
+    right: 10%;
+    bottom: 60%; /* Move higher up */
+    height: 300px; /* Adjust size as needed */
+  }
+  

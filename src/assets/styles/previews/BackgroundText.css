@@ -1,0 +1,21 @@
+/* BackgroundText.css */
+.background-text {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 20vw;
+  color: transparent; 
+  -webkit-text-stroke: 2px #252526; /* Outline color */
+  display: flex;
+  align-items: left;
+  justify-content: center;
+  font-family: 'Arial', sans-serif;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  line-height: 0.6; /* Adjusted to create more overlap */
+  pointer-events: none;
+  flex-direction: column; /* Stack text vertically */
+}
+
