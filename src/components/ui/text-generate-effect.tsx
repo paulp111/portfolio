@@ -59,13 +59,19 @@ export const TextGenerateEffect = ({
     return (
       <motion.div ref={scope}>
         {wordsArray.map((word, idx) => {
+          const importantWords = ["Xbox", "Underground", "SpaceX", "SeaShellScripts"];
+          const isImportant = importantWords.some(importantWord => word.includes(importantWord));
+
           return (
             <motion.span
               key={word + idx}
-              className="dark:text-white text-black opacity-0"
+              className={`${
+                isImportant ? "text-black" : "text-gray-600"
+              } dark:text-white opacity-0`}
               style={{
                 filter: filter ? "blur(10px)" : "none",
-                fontSize: '3rem', // Textgröße anpassen
+                fontSize: '2.5rem', // was: 2.5rem
+                fontWeight: isImportant ? '600' : '400' // Use a lighter weight for non-important words
               }}
             >
               {word}{" "}
@@ -77,9 +83,9 @@ export const TextGenerateEffect = ({
   };
 
   return (
-    <div ref={containerRef} className={cn("font-bold", className)}>
+    <div ref={containerRef} className={cn("font-normal", className)}>
       <div className="mt-4">
-        <div className="dark:text-white text-black text-4xl leading-snug tracking-wide">
+        <div className="dark:text-white text-gray-600 text-3.5xl leading-snug tracking-wide">
           {renderWords()}
         </div>
       </div>

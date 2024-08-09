@@ -7,8 +7,7 @@ export function Introduction() {
     <div className="flex justify-center items-center flex-col px-4">
       <div className="text-neutral-800 dark:text-neutral-200 text-xl md:text-3xl max-w-3xl mx-auto mb-6 text-left">
         <p className="mb-6">
-          <span className="font-bold">Hey There!</span> I'm{" "}
-          <span className="font-bold">Paul 🤙</span> a code enthusiast dedicated to transforming ideas into reality through technology and creativity.
+           i'm a <span className="font-bold">developer</span> dedicated to transforming ideas into reality through technology and creativity.
         </p>
         <p className="mb-6">
           I hold an <span className="font-bold">LAP</span> in Application
@@ -29,16 +28,6 @@ export function Introduction() {
           Take a look around, and let's create something extraordinary
           <span className="font-bold"> together</span>!
         </p>
-      </div>
-      <div className="flex justify-center items-center space-x-6 mt-6">
-        <div className="flex items-center space-x-2">
-          <Image
-            src="/images/Nextjs-logo.svg.png"
-            alt="Next.js Logo"
-            width={180}
-            height={180}
-          />
-        </div>
       </div>
     </div>
   );

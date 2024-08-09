@@ -10,10 +10,12 @@ import { StaticHighlight } from "@/components/ui/static-highlight";
 import { Navbar } from "@/components/Navbar";
 import { Footer } from "@/components/Footer";
 import ScrollToTopButton from "@/components/ScrollToTopButton";
-import { DirectionAwareHoverDemo } from "@/components/DirectionAwareHoverCard"; 
-import ScrollDownButton from "@/components/ScrollDownButton"; 
-import { ElonCard } from "@/components/ElonCard"; 
-import { Introduction } from "@/components/Introduction"; // Import the new LinkPreviewDemo component
+import { DirectionAwareHoverDemo } from "@/components/DirectionAwareHoverCard";
+import ScrollDownButton from "@/components/ScrollDownButton";
+import { ElonCard } from "@/components/ElonCard";
+import { Introduction } from "@/components/Introduction";
+import { RoundedImageWithTooltip } from "@/components/RoundedImageWithTooltip";
+import { TypewriterEffectSmoothDemo } from "@/components/TypewriterEffectSmoothDemo";
 
 export default function MainPage() {
   return (
@@ -27,7 +29,7 @@ export default function MainPage() {
       <main className="bg-[#f7fafc] dark:bg-black">
         <Navbar />
         <HeroHighlightSection />
-        <ScrollDownButton /> {/* Add the ScrollDownButton here */}
+        <ScrollDownButton />
         <CustomScroll />
 
         {/* Wellen-Übergang oberhalb des LayoutGridSection */}
@@ -35,19 +37,35 @@ export default function MainPage() {
           style={{
             backgroundImage: "url('/mask_1.svg')",
             backgroundSize: "cover",
-            height: "150px", 
-            marginBottom: "-5px", 
+            height: "150px",
+            marginBottom: "-5px",
             backgroundRepeat: "no-repeat",
           }}
         ></div>
+        {/* Typewriter */}
+        <div className="flex flex-col items-center justify-center h-[15rem]">
+          <TypewriterEffectSmoothDemo />
+        </div>
 
         {/* Introduction */}
+        <div className="flex flex-col items-center justify-center pt-10 mt-[-3rem]">
+          <Introduction />
+        </div>
+
+        {/* Testing RoundedImageWithTooltip under Introduction */}
         <div className="flex flex-col items-center justify-center min-h-screen pt-20">
-          <Introduction/>
+          <RoundedImageWithTooltip
+            imageUrl="/images/nana.JPEG" // Use the correct path to your image
+            altText="Description of image"
+            name="Nana"
+            designation="Your Designation"
+          />
         </div>
 
         <div className="flex flex-col items-center justify-center min-h-screen pt-20">
-          <StaticHighlight className="text-4xl mb-6">Digital Dreams</StaticHighlight>
+          <StaticHighlight className="text-4xl mb-6">
+            Digital Dreams
+          </StaticHighlight>
           <p className="text-lg text-gray-600 dark:text-gray-300 mb-4">
             Every idea starts with a spark
           </p>
@@ -58,12 +76,14 @@ export default function MainPage() {
         <div className="flex items-center justify-center min-h-screen pt-10">
           <TextGenerateEffectSection />
           <div className="ml-8">
-            <ElonCard /> {/* Funny Elon card */}
+            <ElonCard />
           </div>
         </div>
 
         <div className="flex flex-col items-center justify-center min-h-screen pt-10">
-          <StaticHighlight className="text-4xl mb-6">Skills & Passion</StaticHighlight>
+          <StaticHighlight className="text-4xl mb-6">
+            Skills & Passion
+          </StaticHighlight>
           <CardHoverEffectSection />
         </div>
 
@@ -73,7 +93,9 @@ export default function MainPage() {
 
         {/* Adding the Direction-Aware-Hover cards */}
         <div className="flex flex-col items-center justify-center min-h-screen pt-10">
-          <StaticHighlight className="text-4xl mb-6">Explore More</StaticHighlight>
+          <StaticHighlight className="text-4xl mb-6">
+            Explore More
+          </StaticHighlight>
           <div className="flex space-x-4">
             <DirectionAwareHoverDemo />
             <DirectionAwareHoverDemo />
@@ -84,23 +106,23 @@ export default function MainPage() {
 
       {/* Wellen-Übergang unterhalb des Contents */}
       <div
-        style={{
-          backgroundImage: "url('/mask_2.svg')",
-          backgroundSize: "cover",
-          height: "150px", 
-          marginBottom: "-5px", 
-          backgroundRepeat: "no-repeat",
-          transform: "rotate(180deg)", 
-        }}
-      ></div>
+  style={{
+    backgroundImage: "url('/mask_2.svg')",
+    backgroundSize: "cover",
+    height: "150px",
+    marginBottom: "-5px",
+    backgroundRepeat: "no-repeat",
+    transform: "rotate(180deg)",
+    backgroundColor: "#f7fafc", // Match this with your footer's background color
+  }}
+></div>
+
 
       <Footer />
       <ScrollToTopButton />
     </div>
   );
 }
-
-
 
 // THIS IS THE NORMAL PAGE DO NOT DELETE IT uwu
 
