@@ -21,9 +21,6 @@ export function TypewriterEffectSmoothDemo() {
       text: "Paul",
       className: "text-blue-500 dark:text-blue-500",
     },
-    {
-      text: "🤙",
-    },
   ];
 
   useEffect(() => {
