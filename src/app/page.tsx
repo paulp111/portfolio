@@ -16,6 +16,7 @@ import { ElonCard } from "@/components/ElonCard";
 import { Introduction } from "@/components/Introduction";
 import { RoundedImageWithTooltip } from "@/components/RoundedImageWithTooltip";
 import { TypewriterEffectSmoothDemo } from "@/components/TypewriterEffectSmoothDemo";
+import { StickyScrollRevealDemo } from "@/components/StickyScrollRevealDemo"; 
 
 export default function MainPage() {
   return (
@@ -43,17 +44,11 @@ export default function MainPage() {
           }}
         ></div>
         {/* Typewriter */}
-        <div className="flex flex-col items-center justify-center h-[15rem]">
+        <div className="flex flex-col items-center justify-center h-[19rem]">
           <TypewriterEffectSmoothDemo />
         </div>
-
-        {/* Introduction */}
-        <div className="flex flex-col items-center justify-center pt-10 mt-[-3rem]">
-          <Introduction />
-        </div>
-
         {/* Testing RoundedImageWithTooltip under Introduction */}
-        <div className="flex flex-col items-center justify-center min-h-screen pt-20">
+        <div className="flex flex-col items-center justify-center h-[5rem]">
           <RoundedImageWithTooltip
             imageUrl="/images/nana.JPEG" // Use the correct path to your image
             altText="Description of image"
@@ -61,6 +56,22 @@ export default function MainPage() {
             designation="Your Designation"
           />
         </div>
+
+        {/* Sticky Scroll Reveal Demo */}
+        <div className="flex flex-col items-center justify-center min-h-screen pt-20">
+          <StaticHighlight className="text-4xl mb-6">About me</StaticHighlight>
+          <StickyScrollRevealDemo />{" "}
+          {/* Adding the StickyScrollRevealDemo component */}
+        </div>
+
+        {/* Introduction 
+        <div className="flex flex-col items-center justify-center pt-10 mt-[15rem]">
+          <StaticHighlight className="text-4xl mb-6">
+            About me
+          </StaticHighlight>
+          <Introduction />
+        </div>
+*/}
 
         <div className="flex flex-col items-center justify-center min-h-screen pt-20">
           <StaticHighlight className="text-4xl mb-6">
@@ -106,17 +117,16 @@ export default function MainPage() {
 
       {/* Wellen-Übergang unterhalb des Contents */}
       <div
-  style={{
-    backgroundImage: "url('/mask_2.svg')",
-    backgroundSize: "cover",
-    height: "150px",
-    marginBottom: "-5px",
-    backgroundRepeat: "no-repeat",
-    transform: "rotate(180deg)",
-    backgroundColor: "#f7fafc", // Match this with your footer's background color
-  }}
-></div>
-
+        style={{
+          backgroundImage: "url('/mask_2.svg')",
+          backgroundSize: "cover",
+          height: "150px",
+          marginBottom: "-5px",
+          backgroundRepeat: "no-repeat",
+          transform: "rotate(180deg)",
+          backgroundColor: "#f7fafc", // Match this with your footer's background color
+        }}
+      ></div>
 
       <Footer />
       <ScrollToTopButton />

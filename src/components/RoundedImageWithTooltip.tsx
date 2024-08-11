@@ -71,6 +71,9 @@ export function RoundedImageWithTooltip({
           </motion.div>
         )}
       </AnimatePresence>
+      <p className="text-neutral-600 dark:text-neutral-200 text-xs sm:text-base mt-4">
+        Dev | Designer
+      </p>
     </div>
   );
 }

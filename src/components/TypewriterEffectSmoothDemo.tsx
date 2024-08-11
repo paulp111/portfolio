@@ -18,7 +18,7 @@ export function TypewriterEffectSmoothDemo() {
       text: "I'm",
     },
     {
-      text: "Paul",
+      text: "Paul 👋",
       className: "text-blue-500 dark:text-blue-500",
     },
   ];
@@ -55,7 +55,7 @@ export function TypewriterEffectSmoothDemo() {
   return (
     <div ref={elementRef} className="flex flex-col items-center justify-center h-[40rem]">
       <p className="text-neutral-600 dark:text-neutral-200 text-xs sm:text-base">
-        Pls don't disable JavaScript 🥲
+        Reach for the stars
       </p>
       <TypewriterEffectSmooth words={words} />
     </div>
