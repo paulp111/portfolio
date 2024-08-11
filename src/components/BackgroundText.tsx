@@ -1,6 +1,6 @@
-// BackgroundText.tsx
-import React from 'react';
-import '../assets/styles/previews/BackgroundText.css';
+// USED IN DIF FOOTER
+import React from "react";
+import "../assets/styles/previews/BackgroundText.css";
 
 const BackgroundText: React.FC = () => {
   return (

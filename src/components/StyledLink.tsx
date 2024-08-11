@@ -12,7 +12,7 @@ export default function StyledLink() {
         aria-label="React logo"
         className="mr-1"
       >
-        {/* Dein SVG-Inhalt hier */}
+        {/* Place SVG here*/}
       </svg>
       React
     </a>

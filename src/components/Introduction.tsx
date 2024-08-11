@@ -7,7 +7,8 @@ export function Introduction() {
     <div className="flex justify-center items-center flex-col px-4">
       <div className="text-neutral-800 dark:text-neutral-200 text-xl md:text-3xl max-w-3xl mx-auto mb-6 text-left">
         <p className="mb-6">
-           i'm a <span className="font-bold">developer</span> dedicated to transforming ideas into reality through technology and creativity.
+          i'm a <span className="font-bold">developer</span> dedicated to
+          transforming ideas into reality through technology and creativity.
         </p>
         <p className="mb-6">
           I hold an <span className="font-bold">LAP</span> in Application

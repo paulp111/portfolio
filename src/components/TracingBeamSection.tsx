@@ -1,7 +1,7 @@
 "use client";
 import React from "react";
 import { TracingBeam } from "@/components/ui/tracing-beam";
-import Image from "next/image"; // sicherstellen, dass der Import korrekt ist
+import Image from "next/image";
 
 const dummyContent = [
   {

@@ -1,11 +1,6 @@
 "use client";
 import React, { useEffect, useRef, useState } from "react";
-import {
-  motion,
-  useTransform,
-  useScroll,
-  useSpring,
-} from "framer-motion";
+import { motion, useTransform, useScroll, useSpring } from "framer-motion";
 import { cn } from "@/lib/utils";
 
 export const TracingBeam = ({
@@ -81,7 +76,7 @@ export const TracingBeam = ({
         <svg
           viewBox={`0 0 20 ${svgHeight}`}
           width="20"
-          height={svgHeight} // Set the SVG height
+          height={svgHeight}
           className=" ml-4 block"
           aria-hidden="true"
         >

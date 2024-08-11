@@ -1,4 +1,4 @@
-// components/ui/card-spotlight.tsx
+//UNUSED
 
 "use client";
 import { cn } from "@/lib/utils";

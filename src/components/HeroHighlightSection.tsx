@@ -2,15 +2,26 @@
 
 "use client";
 import { motion } from "framer-motion";
-import { HeroHighlight, Highlight } from "@/components/ui/hero-highlight-section";
+import {
+  HeroHighlight,
+  Highlight,
+} from "@/components/ui/hero-highlight-section";
 import Image from "next/image";
 
 export function HeroHighlightSection() {
   return (
     <HeroHighlight>
       <div className="relative flex flex-col items-center">
-        { /*Größeres Logo */}
-        { <Image src="/scripts.png" alt="Logo" width={250} height={250} className="mb-6" /> }
+        {/* Adjust Logo */}
+        {
+          <Image
+            src="/scripts.png"
+            alt="Logo"
+            width={250}
+            height={250}
+            className="mb-6"
+          />
+        }
 
         {/* Text Section */}
         <motion.h1

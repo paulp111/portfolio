@@ -1,11 +1,11 @@
 "use client";
 import Head from "next/head";
-import { useRouter } from "next/navigation"; // Verwende `next/navigation` für die useRouter-Hook
+import { useRouter } from "next/navigation";
 import { TracingBeamSection } from "@/components/TracingBeamSection";
 import "../../assets/styles/globals.css";
 
 export default function SubPage() {
-  const router = useRouter(); // useRouter-Hook initialisieren
+  const router = useRouter();
 
   return (
     <div>
@@ -18,7 +18,7 @@ export default function SubPage() {
       <main className="bg-white dark:bg-black min-h-screen">
         <div className="fixed top-0 left-0 p-4">
           <button
-            onClick={() => router.back()} // Navigiert zur vorherigen Seite
+            onClick={() => router.back()}
             className="bg-black dark:bg-white dark:text-black text-white flex justify-center group/modal-btn relative px-4 py-2 rounded-md"
           >
             <span className="group-hover/modal-btn:translate-x-40 transition duration-500">

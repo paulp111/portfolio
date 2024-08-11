@@ -1,6 +1,11 @@
 "use client";
 import React, { useEffect, useState } from "react";
-import { HoveredLink, Menu, MenuItem, ProductItem } from "@/components/ui/navbar-menu";
+import {
+  HoveredLink,
+  Menu,
+  MenuItem,
+  ProductItem,
+} from "@/components/ui/navbar-menu";
 import { cn } from "@/lib/utils";
 
 export function Navbar() {
@@ -30,8 +35,8 @@ export function Navbar() {
       className={cn(
         "fixed inset-x-0 max-w-2xl mx-auto z-50 transition-all duration-300 ease-in-out",
         {
-          "top-[2rem] opacity-100": showNavbar, // Navbar sichtbar
-          "-top-20 opacity-0": !showNavbar,     // Navbar unsichtbar
+          "top-[2rem] opacity-100": showNavbar, // Navbar visible
+          "-top-20 opacity-0": !showNavbar, // Navbar invisible
         }
       )}
       style={{ height: "4rem" }}
@@ -41,7 +46,9 @@ export function Navbar() {
           <div className="flex flex-col space-y-4 text-sm">
             <HoveredLink href="/subpage">Web Development</HoveredLink>
             <HoveredLink href="/subpage">Interface Design</HoveredLink>
-            <HoveredLink href="/subpage">Search Engine Optimization</HoveredLink>
+            <HoveredLink href="/subpage">
+              Search Engine Optimization
+            </HoveredLink>
             <HoveredLink href="/subpage">Branding</HoveredLink>
           </div>
         </MenuItem>

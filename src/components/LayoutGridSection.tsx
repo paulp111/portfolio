@@ -7,25 +7,25 @@ export function LayoutGridSection() {
       id: 1,
       content: <SkeletonOne />,
       className: "md:col-span-2",
-      thumbnail: "/images/ghini.jpg", // Beispielbild im public Ordner
+      thumbnail: "/images/ghini.jpg",
     },
     {
       id: 2,
       content: <SkeletonTwo />,
       className: "col-span-1",
-      thumbnail: "/images/cali.jpg", // Beispielbild im public Ordner
+      thumbnail: "/images/cali.jpg",
     },
     {
       id: 3,
       content: <SkeletonThree />,
       className: "col-span-1",
-      thumbnail: "/images/photo2.png", // Beispielbild im public Ordner
+      thumbnail: "/images/photo2.png",
     },
     {
       id: 4,
       content: <SkeletonFour />,
       className: "md:col-span-2",
-      thumbnail: "/images/photo1.png", // Beispielbild im public Ordner
+      thumbnail: "/images/photo1.png",
     },
   ];
 

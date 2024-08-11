@@ -23,8 +23,14 @@ export function RoundedImageWithTooltip({
   const [hovered, setHovered] = useState(false);
   const springConfig = { stiffness: 100, damping: 5 };
   const x = useMotionValue(0);
-  const rotate = useSpring(useTransform(x, [-100, 100], [-15, 15]), springConfig);
-  const translateX = useSpring(useTransform(x, [-100, 100], [-25, 25]), springConfig);
+  const rotate = useSpring(
+    useTransform(x, [-100, 100], [-15, 15]),
+    springConfig
+  );
+  const translateX = useSpring(
+    useTransform(x, [-100, 100], [-25, 25]),
+    springConfig
+  );
 
   const handleMouseMove = (event: any) => {
     const halfWidth = event.target.offsetWidth / 2;
@@ -32,8 +38,15 @@ export function RoundedImageWithTooltip({
   };
 
   return (
-    <div className="relative group" onMouseEnter={() => setHovered(true)} onMouseLeave={() => setHovered(false)}>
-      <div onMouseMove={handleMouseMove} className="flex flex-col items-center justify-center">
+    <div
+      className="relative group"
+      onMouseEnter={() => setHovered(true)}
+      onMouseLeave={() => setHovered(false)}
+    >
+      <div
+        onMouseMove={handleMouseMove}
+        className="flex flex-col items-center justify-center"
+      >
         <Image
           height={100}
           width={100}

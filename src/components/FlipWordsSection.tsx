@@ -8,8 +8,8 @@ export function FlipWordsSection() {
   const router = useRouter();
 
   const handleButtonClick = () => {
-    // Hier kannst du festlegen, wohin der Button führt, z.B. zu einer anderen Seite
-    router.push("/subpage"); // Beispiel: "/another-page" ist der Pfad zu einer anderen Seite
+    // Router Button
+    router.push("/subpage");
   };
 
   return (

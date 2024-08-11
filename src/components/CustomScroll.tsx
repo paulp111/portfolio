@@ -9,7 +9,7 @@ export default function CustomScroll() {
   useEffect(() => {
     const handleScroll = () => {
       const currentScroll = window.scrollY;
-      const threshold = window.innerHeight; // Höhe der Punkte-Sektion
+      const threshold = window.innerHeight;
 
       if (isScrolling.current) return;
 

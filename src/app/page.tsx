@@ -16,7 +16,7 @@ import { ElonCard } from "@/components/ElonCard";
 import { Introduction } from "@/components/Introduction";
 import { RoundedImageWithTooltip } from "@/components/RoundedImageWithTooltip";
 import { TypewriterEffectSmoothDemo } from "@/components/TypewriterEffectSmoothDemo";
-import { StickyScrollRevealDemo } from "@/components/StickyScrollRevealDemo"; 
+import { StickyScrollRevealDemo } from "@/components/StickyScrollRevealDemo";
 
 export default function MainPage() {
   return (
@@ -50,7 +50,7 @@ export default function MainPage() {
         {/* Testing RoundedImageWithTooltip under Introduction */}
         <div className="flex flex-col items-center justify-center h-[5rem]">
           <RoundedImageWithTooltip
-            imageUrl="/images/nana.JPEG" // Use the correct path to your image
+            imageUrl="/images/nana.JPEG"
             altText="Description of image"
             name="Nana"
             designation="Your Designation"
@@ -124,7 +124,7 @@ export default function MainPage() {
           marginBottom: "-5px",
           backgroundRepeat: "no-repeat",
           transform: "rotate(180deg)",
-          backgroundColor: "#f7fafc", // Match this with your footer's background color
+          backgroundColor: "#f7fafc",
         }}
       ></div>
 
@@ -133,26 +133,3 @@ export default function MainPage() {
     </div>
   );
 }
-
-// THIS IS THE NORMAL PAGE DO NOT DELETE IT uwu
-
-/* import Head from "next/head";
-import "../assets/styles/globals.css";
-import { LandingPageEffect } from "@/components/LandingPageEffect";
-
-export default function Home() {
-  return (
-    <div>
-      <Head>
-        <title>My Portfolio</title>
-        <meta name="description" content="Welcome to the bay" />
-        <link rel="icon" href="/favicon.ico" />
-      </Head>
-
-      <main className="flex flex-col items-center justify-center min-h-screen bg-[#f7fafc]">
-        <LandingPageEffect />
-      </main>
-    </div>
-  );
-}
-*/

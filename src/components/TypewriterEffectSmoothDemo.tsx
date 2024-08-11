@@ -6,7 +6,6 @@ export function TypewriterEffectSmoothDemo() {
   const [isVisible, setIsVisible] = useState(false);
   const elementRef = useRef(null);
 
-  // Define the words array inside the component
   const words = [
     {
       text: "Hey",
@@ -26,14 +25,14 @@ export function TypewriterEffectSmoothDemo() {
   useEffect(() => {
     const observer = new IntersectionObserver(
       ([entry]) => {
-        console.log('Intersection Observer entry:', entry); // Debugging line
+        console.log("Intersection Observer entry:", entry); // Debugging line
         if (entry.isIntersecting) {
-          console.log('Component is in view'); // Debugging line
+          console.log("Component is in view"); // Debugging line
           setIsVisible(true);
-          observer.disconnect(); // Stop observing after it becomes visible
+          observer.disconnect();
         }
       },
-      { threshold: 0.1 } // Adjust threshold as needed
+      { threshold: 0.1 }
     );
 
     if (elementRef.current) {
@@ -48,12 +47,15 @@ export function TypewriterEffectSmoothDemo() {
   }, []);
 
   if (!isVisible) {
-    console.log('Component is not visible yet'); // Debugging line
+    console.log("Component is not visible yet"); // Debugging line
     return <div ref={elementRef} className="h-[40rem]"></div>; // Placeholder to maintain layout
   }
 
   return (
-    <div ref={elementRef} className="flex flex-col items-center justify-center h-[40rem]">
+    <div
+      ref={elementRef}
+      className="flex flex-col items-center justify-center h-[40rem]"
+    >
       <p className="text-neutral-600 dark:text-neutral-200 text-xs sm:text-base">
         Reach for the stars
       </p>

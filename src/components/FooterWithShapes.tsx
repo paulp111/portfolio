@@ -40,11 +40,10 @@ const FooterWithShapes: React.FC = () => {
       },
     ];
 
-
     const shapeMeshes = shapes.map((shape) => {
       const texture = new THREE.TextureLoader().load(shape.imagePath);
       const material = new THREE.MeshBasicMaterial({
-        color: new THREE.Color('#2e83fd'),
+        color: new THREE.Color("#2e83fd"),
         map: texture,
         transparent: true,
       });
@@ -107,7 +106,13 @@ const FooterWithShapes: React.FC = () => {
   return (
     <div
       ref={mountRef}
-      style={{ position: "fixed", top: 0, left: 0, width: "100%", height: "100%" }}
+      style={{
+        position: "fixed",
+        top: 0,
+        left: 0,
+        width: "100%",
+        height: "100%",
+      }}
     />
   );
 };

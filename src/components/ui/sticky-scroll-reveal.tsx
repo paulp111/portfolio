@@ -56,7 +56,7 @@ export const StickyScroll = ({
   return (
     <motion.div
       animate={{
-        backgroundColor: "#f7fafc", 
+        backgroundColor: "#f7fafc",
       }}
       className="flex justify-center relative space-x-10 p-10"
       ref={ref}

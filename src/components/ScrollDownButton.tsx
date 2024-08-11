@@ -41,7 +41,7 @@ export default function ScrollDownButton() {
           strokeWidth="1.5"
           stroke="currentColor"
           className="w-6 h-6 text-black animate-bounce"
-          style={{ position: 'relative', top: '-10px' }} // This offsets the second arrow
+          style={{ position: "relative", top: "-10px" }}
         >
           <path
             strokeLinecap="round"

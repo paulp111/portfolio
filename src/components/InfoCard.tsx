@@ -18,10 +18,10 @@ export function InfoCard() {
         </ul>
       </div>
       <p className="text-neutral-300 mt-4 relative z-20 text-sm">
-      Explore my work and discover what makes me a trusted partner for your digital needs.
-      Consistent and dependable, I deliver what I promise.
-      Driven by a love for technology and design, I go above and beyond.
-      hover the box
+        Explore my work and discover what makes me a trusted partner for your
+        digital needs. Consistent and dependable, I deliver what I promise.
+        Driven by a love for technology and design, I go above and beyond. hover
+        the box
       </p>
     </CardSpotlight>
   );
