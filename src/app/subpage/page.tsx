@@ -15,7 +15,7 @@ export default function SubPage() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <main className="bg-white dark:bg-black min-h-screen">
+      <main className="bg-[#f7fafc] dark:bg-black min-h-screen overflow-hidden">
         <div className="fixed top-0 left-0 p-4">
           <button
             onClick={() => router.back()}

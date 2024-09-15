@@ -10,13 +10,12 @@ import { StaticHighlight } from "@/components/ui/static-highlight";
 import { Navbar } from "@/components/Navbar";
 import { Footer } from "@/components/Footer";
 import ScrollToTopButton from "@/components/ScrollToTopButton";
-import { DirectionAwareHoverDemo } from "@/components/DirectionAwareHoverCard";
 import ScrollDownButton from "@/components/ScrollDownButton";
 import { ElonCard } from "@/components/ElonCard";
-import { Introduction } from "@/components/Introduction";
 import { RoundedImageWithTooltip } from "@/components/RoundedImageWithTooltip";
 import { TypewriterEffectSmoothDemo } from "@/components/TypewriterEffectSmoothDemo";
 import { StickyScrollRevealDemo } from "@/components/StickyScrollRevealDemo";
+import { DirectionAwareHover } from "@/components/ui/direction-aware-hover";
 
 export default function MainPage() {
   return (
@@ -43,25 +42,20 @@ export default function MainPage() {
             backgroundRepeat: "no-repeat",
           }}
         ></div>
-        {/* Typewriter */}
-        <div className="flex flex-col items-center justify-center h-[19rem]">
+
+        {/* About me Section */}
+        <div className="flex flex-col items-center justify-center mt-4">
           <TypewriterEffectSmoothDemo />
         </div>
-        {/* Testing RoundedImageWithTooltip under Introduction */}
-        <div className="flex flex-col items-center justify-center h-[5rem]">
-          <RoundedImageWithTooltip
-            imageUrl="/images/nana.JPEG"
-            altText="Description of image"
-            name="Nana"
-            designation="Your Designation"
-          />
+
+        {/* RoundedImageWithTooltip */}
+        <div className="flex flex-col items-center justify-center mt-4">
+          <RoundedImageWithTooltip imageUrl="/images/nana.JPEG" />
         </div>
 
         {/* Sticky Scroll Reveal Demo */}
-        <div className="flex flex-col items-center justify-center min-h-screen pt-20">
-          <StaticHighlight className="text-4xl mb-6">About me</StaticHighlight>
-          <StickyScrollRevealDemo />{" "}
-          {/* Adding the StickyScrollRevealDemo component */}
+        <div className="flex flex-col items-center justify-center min-h-screen pt-15">
+          <StickyScrollRevealDemo />
         </div>
 
         {/* Introduction 
@@ -71,12 +65,10 @@ export default function MainPage() {
           </StaticHighlight>
           <Introduction />
         </div>
-*/}
+        */}
 
         <div className="flex flex-col items-center justify-center min-h-screen pt-20">
-          <StaticHighlight className="text-4xl mb-6">
-            Digital Dreams
-          </StaticHighlight>
+          <StaticHighlight className="text-4xl mb-6">Digital Dreams</StaticHighlight>
           <p className="text-lg text-gray-600 dark:text-gray-300 mb-4">
             Every idea starts with a spark
           </p>
@@ -92,9 +84,7 @@ export default function MainPage() {
         </div>
 
         <div className="flex flex-col items-center justify-center min-h-screen pt-10">
-          <StaticHighlight className="text-4xl mb-6">
-            Skills & Passion
-          </StaticHighlight>
+          <StaticHighlight className="text-4xl mb-6">Skills & Passion</StaticHighlight>
           <CardHoverEffectSection />
         </div>
 
@@ -104,13 +94,37 @@ export default function MainPage() {
 
         {/* Adding the Direction-Aware-Hover cards */}
         <div className="flex flex-col items-center justify-center min-h-screen pt-10">
-          <StaticHighlight className="text-4xl mb-6">
-            Explore More
-          </StaticHighlight>
+          <StaticHighlight className="text-4xl mb-6">Explore More</StaticHighlight>
           <div className="flex space-x-4">
-            <DirectionAwareHoverDemo />
-            <DirectionAwareHoverDemo />
-            <DirectionAwareHoverDemo />
+            {/* Durak Project Card */}
+            <a href="https://github.com/paulp111/Durak-" target="_blank" rel="noopener noreferrer">
+              <DirectionAwareHover videoUrl="/videos/lambo.mp4">
+                <p className="font-bold text-xl">Durak Project</p>
+                <p className="font-normal text-sm">
+                  A card game implementation using Java and JavaFX.
+                </p>
+              </DirectionAwareHover>
+            </a>
+
+            {/* PHP Shop Card */}
+            <a href="https://github.com/paulp111/php-shop" target="_blank" rel="noopener noreferrer">
+              <DirectionAwareHover videoUrl="/videos/lambo.mp4">
+                <p className="font-bold text-xl">PHP Shop</p>
+                <p className="font-normal text-sm">
+                  A simple shop system built with PHP for product management.
+                </p>
+              </DirectionAwareHover>
+            </a>
+
+            {/* Battleships Project Card */}
+            <a href="https://github.com/paulp111/Battleships_Java_Final" target="_blank" rel="noopener noreferrer">
+              <DirectionAwareHover videoUrl="/videos/lambo.mp4">
+                <p className="font-bold text-xl">Battleships Project</p>
+                <p className="font-normal text-sm">
+                  A Battleships game developed in Java with a clean user interface.
+                </p>
+              </DirectionAwareHover>
+            </a>
           </div>
         </div>
       </main>

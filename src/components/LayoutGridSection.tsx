@@ -44,8 +44,7 @@ const SkeletonOne = () => {
       </p>
       <p className="font-normal text-base text-white"></p>
       <p className="font-normal text-base my-4 max-w-lg text-neutral-200">
-        A serene and tranquil retreat, this house in the woods offers a peaceful
-        escape from the hustle and bustle of city life.
+      Just like coding in the zone—sometimes, you need a break from the noise. This cozy house in the woods mirrors my approach to life: simple, focused, and a space to reset before the next challenge. A reminder that even in solitude, growth happens.
       </p>
     </div>
   );
@@ -55,13 +54,11 @@ const SkeletonTwo = () => {
   return (
     <div>
       <p className="font-bold md:text-4xl text-xl text-white">
-        House above the clouds
+      The California Dream
       </p>
       <p className="font-normal text-base text-white"></p>
       <p className="font-normal text-base my-4 max-w-lg text-neutral-200">
-        Perched high above the world, this house offers breathtaking views and a
-        unique living experience. It&apos;s a place where the sky meets home,
-        and tranquility is a way of life.
+      Much like my goals in IT and software development, the California flag represents freedom, ambition, and the drive to explore new opportunities. It’s about aiming for something bigger, even when it feels just out of reach.
       </p>
     </div>
   );
@@ -71,12 +68,12 @@ const SkeletonThree = () => {
   return (
     <div>
       <p className="font-bold md:text-4xl text-xl text-white">
-        Greens all over
+        Natures Escape
       </p>
       <p className="font-normal text-base text-white"></p>
       <p className="font-normal text-base my-4 max-w-lg text-neutral-200">
-        A house surrounded by greenery and nature&apos;s beauty. It&apos;s the
-        perfect place to relax, unwind, and enjoy life.
+      Tucked away in the embrace of green, this place feels like a personal reset button. Away from the chaos, it’s where you recharge, reflect, and get back in tune with what really matters before diving back into the grind.
+
       </p>
     </div>
   );
@@ -86,12 +83,11 @@ const SkeletonFour = () => {
   return (
     <div>
       <p className="font-bold md:text-4xl text-xl text-white">
-        Rivers are serene
+      Mountain of Possibilities
       </p>
       <p className="font-normal text-base text-white"></p>
       <p className="font-normal text-base my-4 max-w-lg text-neutral-200">
-        A house by the river is a place of peace and tranquility. It&apos;s the
-        perfect place to relax, unwind, and enjoy life.
+      Standing at the base of a mountain feels like staring at a new project—big, daunting, but full of possibilities. Whether it’s tackling complex code or pushing myself on a long run, it’s all about taking that first step and embracing the challenge ahead.
       </p>
     </div>
   );

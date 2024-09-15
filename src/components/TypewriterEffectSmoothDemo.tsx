@@ -25,9 +25,7 @@ export function TypewriterEffectSmoothDemo() {
   useEffect(() => {
     const observer = new IntersectionObserver(
       ([entry]) => {
-        console.log("Intersection Observer entry:", entry); // Debugging line
         if (entry.isIntersecting) {
-          console.log("Component is in view"); // Debugging line
           setIsVisible(true);
           observer.disconnect();
         }
@@ -47,18 +45,17 @@ export function TypewriterEffectSmoothDemo() {
   }, []);
 
   if (!isVisible) {
-    console.log("Component is not visible yet"); // Debugging line
-    return <div ref={elementRef} className="h-[40rem]"></div>; // Placeholder to maintain layout
+    return <div ref={elementRef} className="h-[15rem]"></div>; // Reduced placeholder height
   }
 
   return (
     <div
       ref={elementRef}
-      className="flex flex-col items-center justify-center h-[40rem]"
+      className="flex flex-col items-center justify-center py-8 -mt-5"
     >
-      <p className="text-neutral-600 dark:text-neutral-200 text-xs sm:text-base">
+      {/* <p className="text-neutral-600 dark:text-neutral-200 text-xs sm:text-base">
         Reach for the stars
-      </p>
+      </p> */}
       <TypewriterEffectSmooth words={words} />
     </div>
   );
